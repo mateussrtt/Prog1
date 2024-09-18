@@ -7,19 +7,21 @@ int main(){
     int vetor[20], maior, menor, indiceMaior, indiceMenor;
 
     for(int i = 0; i < 20; i++){
-        printf("Digite o %d numero do vetor 1: ", i + 1);
+        printf("Digite o %d numero do vetor: ", i + 1);
         scanf("%d", &vetor[i]);
 
          maior = menor = vetor[0];
          indiceMaior = indiceMenor = 0;
 
     } 
-
+ 
     for(int i = 1; i < 20; i++){
+
         if(maior < vetor[i]){
             maior = vetor[i];
             indiceMaior = i + 1;
         }
+        
         if(menor > vetor[i]){
             menor = vetor[i];
             indiceMenor = i + 1 ;
